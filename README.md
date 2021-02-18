@@ -1,6 +1,6 @@
 # BioMol-Project-Group2
 
-##### Nico Ares, Pol Besalú and Isaac Soul
+##### Nico Ares, Pol Besalú, Isaac Soul
 ------
 Download assigned contig from a nematode species.
 
