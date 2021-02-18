@@ -9,8 +9,11 @@ Download assigned contig from a nematode species.
 # so we can download particular files from the github repo.
 npm install -g github-files-fetcher
 
+# In case we dont have npm package manager we can run this command before:
+sudo apt install npm
+
 # Download contig sequence from repo
-fetcher --url="https://github.com/dantekali/BioMol-Project/blob/main/Group11_contig_194888_195063.fa"  --out="~/Desktop/Project"
+fetcher --url="https://github.com/kalicout/BioMol-Project-Group2/blob/main/Group2_contig_15842_16020.fa"  --out="~/Desktop/PROJECT"
 ```
 
 ### PROJECT
@@ -18,11 +21,8 @@ D. PROJECT DESCRIPTION
 The main objective of the project is to annotate the genes included in the contig and to functionally characterize the predicted proteins. For instance, you could use ab-initio tools to obtain a first prediction, identify the putative proteins using blast search and use homology-based tools with the annotations of a closely related species. Later you could functionally characterize your proteins. You should discuss the performance of the different methods. Can you guess to which species does your contig correspond?
 
 
-###  GitHub report: 
-upload to GitHub an .md file describing the pipeline used and the and/or scripts used if any. Each person of each group will upload the report (including the description of the pipeline, a brief discussion of the main results and the scripts -used if any- in a pdf file) to the campus virtual. Name the file as GROUPx_Surname_Name.pdf
-
-
-  <!--Ab-initio methods: they use several elements in the genomic sequence (suchas donor and acceptor splice sites, branch site, initiation and termination codons)and codon usage to obtain a model based on a training set.-->
+### GitHub report: 
+Upload to GitHub an .md file describing the pipeline used and the and/or scripts used if any. Each person of each group will upload the report (including the description of the pipeline, a brief discussion of the main results and the scripts -used if any- in a pdf file) to the campus virtual. Name the file as GROUPx_Surname_Name.pdf
   
   ## AB-INITIO METHODS:
   
