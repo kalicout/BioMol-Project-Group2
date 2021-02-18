@@ -1,7 +1,7 @@
 # BioMol-Project-Group2
 ### BIOMOL
 
-Nico Ares, Pol Besalú and Isaac Soul
+##### Nico Ares, Pol Besalú and Isaac Soul
 ------
 
 The main objective of the project is to **annotate the genes** included in the contig and to **functionally characterize** the predicted proteins.
