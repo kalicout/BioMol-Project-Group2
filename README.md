@@ -23,6 +23,9 @@ The main objective of the project is to annotate the genes included in the conti
 
 ### GitHub report: 
 Upload to GitHub an .md file describing the pipeline used and the and/or scripts used if any. Each person of each group will upload the report (including the description of the pipeline, a brief discussion of the main results and the scripts -used if any- in a pdf file) to the campus virtual. Name the file as GROUPx_Surname_Name.pdf
+
+### PROCEDURE:
+We can start by running our contig in blast to find if it gives us any hit on any kind of 
   
   ## AB-INITIO METHODS:
   
