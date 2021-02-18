@@ -9,11 +9,8 @@ Download assigned contig from a nematode species.
 # so we can download particular files from the github repo.
 npm install -g github-files-fetcher
 
-# In case we dont have npm package manager we can run this command before:
-sudo apt install npm
-
 # Download contig sequence from repo
-fetcher --url="https://github.com/kalicout/BioMol-Project-Group2/blob/main/Group2_contig_15842_16020.fa"  --out="~/Desktop/PROJECT"
+fetcher --url="https://github.com/dantekali/BioMol-Project/blob/main/Group11_contig_194888_195063.fa"  --out="~/Desktop/Project"
 ```
 
 ### PROJECT
@@ -21,12 +18,10 @@ D. PROJECT DESCRIPTION
 The main objective of the project is to annotate the genes included in the contig and to functionally characterize the predicted proteins. For instance, you could use ab-initio tools to obtain a first prediction, identify the putative proteins using blast search and use homology-based tools with the annotations of a closely related species. Later you could functionally characterize your proteins. You should discuss the performance of the different methods. Can you guess to which species does your contig correspond?
 
 
-### GitHub report: 
-Upload to GitHub an .md file describing the pipeline used and the and/or scripts used if any. Each person of each group will upload the report (including the description of the pipeline, a brief discussion of the main results and the scripts -used if any- in a pdf file) to the campus virtual. Name the file as GROUPx_Surname_Name.pdf
+###  GitHub report: 
+upload to GitHub an .md file describing the pipeline used and the and/or scripts used if any. Each person of each group will upload the report (including the description of the pipeline, a brief discussion of the main results and the scripts -used if any- in a pdf file) to the campus virtual. Name the file as GROUPx_Surname_Name.pdf
 
-### PROCEDURE:
-We can start by running our contig in blast to find if it gives us any hit on any kind of 
-  
+
   ## AB-INITIO METHODS:
   
   ### GeneID  prediction: (https://genome.crg.cat/software/geneid/geneid.html)
@@ -47,25 +42,31 @@ We can start by running our contig in blast to find if it gives us any hit on an
   >
   > 4 genes in +/-chain 2 from the C_elegans genomic DNA.
   > 
-  > 16 exons in +chain 6 -chain 10.
+  > 16 exons in +chain 6 / -chain 10.
   > 
-  > Gene 1: 3 exon (s)   1526  -   2189   486 bp, 161 aa, chain +
+  > Gene 1: 3 exon (s),   1526  -   2189,   486 bp, 161 aa, chain +
   > 
-  > Gene 2: 4 exon (s)   2396  -   3529   987 bp, 328 aa, chain -
+  > Gene 2: 4 exon (s),   2396  -   3529,   987 bp, 328 aa, chain -
   > 
-  > Gene 3: 6 exon (s)   3957  -   6437  2247 bp, 748 aa, chain -
+  > Gene 3: 6 exon (s),   3957  -   6437,  2247 bp, 748 aa, chain -
   > 
-  > Gene 4: 6 exon (s)   3957  -   6437  2247 bp, 155 aa, chain -
+  > Gene 4: 6 exon (s),   3957  -   6437,  2247 bp, 155 aa, chain -
   > 
   > The positions of predicted genes and exons have a score = 285.580908 
   > 
 
 ### GENESCAN: (http://argonaute.mit.edu/GENSCAN.html)
 
-  > We use the "Group11_contig_194888_195063.fa" file to make a gene prediction using GeneID, this will result in the generation of a txt file called "GENESCAN.txt".
+  > We run our fasta file ("Group2_contig_15842_16020.fa") through GENESCAN and obtained the following results:
+  > 
+  > 10566 bp : 36.78% C+G : Isochore 1 ( 0 - 43 C+G%)
+  > 
+  > NO EXONS FOUND AT GIVEN PROBABILITY CUTOFF
+  > 
+  > Our GENSCAN predicted 1 peptide of 251 aa. 
 
-- **homology-based tools** with the annotations of  a closely related species (web-server/local)
-  <!--Gene predictions are based on alignments from known proteins (usually) from other genomes.-->
+
+## HOMOLOGY BASED METHODS:
 
   - Run *blastx* of the unspliced sequence against the *nr database*. Since this is a huge database, this time we will run blast on the ncbi server https://blast.ncbi.nlm.nih.gov/Blast.cgi
 
