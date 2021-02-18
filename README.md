@@ -10,7 +10,7 @@ Download assigned contig from a nematode species.
 npm install -g github-files-fetcher
 
 # Download contig sequence from repo
-fetcher --url="https://github.com/dantekali/BioMol-Project/blob/main/Group11_contig_194888_195063.fa"  --out="~/Desktop/Project"
+fetcher --url= https://github.com/kalicout/BioMol-Project-Group2.git
 ```
 
 ### PROJECT
