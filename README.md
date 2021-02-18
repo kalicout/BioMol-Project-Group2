@@ -1,6 +1,6 @@
 # BioMol-Project-Group2
 
-##### Nico Ares, Pol Besalú, Isaac Soul
+#### Nico Ares, Pol Besalú, Isaac Soul
 ------
 Download assigned contig from a nematode species.
 
@@ -67,6 +67,8 @@ upload to GitHub an .md file describing the pipeline used and the and/or scripts
 
 
 ## HOMOLOGY BASED METHODS:
+
+  > We run our sequence through blast against the nr database
 
   - Run *blastx* of the unspliced sequence against the *nr database*. Since this is a huge database, this time we will run blast on the ncbi server https://blast.ncbi.nlm.nih.gov/Blast.cgi
 
