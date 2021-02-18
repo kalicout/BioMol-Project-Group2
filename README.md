@@ -2,9 +2,6 @@
 
 ##### Nico Ares, Pol Besalú and Isaac Soul
 ------
-
-The main objective of the project is to **annotate the genes** included in the contig and to **functionally characterize** the predicted proteins.
-
 Download assigned contig from a nematode species.
 
 ```bash
@@ -16,32 +13,51 @@ npm install -g github-files-fetcher
 fetcher --url="https://github.com/dantekali/BioMol-Project/blob/main/Group11_contig_194888_195063.fa"  --out="~/Desktop/Project"
 ```
 
-#### Genes annotation included in the contig
+### PROJECT
+D. PROJECT DESCRIPTION
+The main objective of the project is to annotate the genes included in the contig and to functionally characterize the predicted proteins. For instance, you could use ab-initio tools to obtain a first prediction, identify the putative proteins using blast search and use homology-based tools with the annotations of a closely related species. Later you could functionally characterize your proteins. You should discuss the performance of the different methods. Can you guess to which species does your contig correspond?
 
-We will obtain gene predictions using the two types of methods and we will compare the results with Ensembl annotations.
 
-- **ab-initio tools** to obtain a first prediction (select closest species in model)
+###  GitHub report: 
+upload to GitHub an .md file describing the pipeline used and the and/or scripts used if any. Each person of each group will upload the report (including the description of the pipeline, a brief discussion of the main results and the scripts -used if any- in a pdf file) to the campus virtual. Name the file as GROUPx_Surname_Name.pdf
+
+
   <!--Ab-initio methods: they use several elements in the genomic sequence (suchas donor and acceptor splice sites, branch site, initiation and termination codons)and codon usage to obtain a model based on a training set.-->
   
-  - GeneID  prediction: https://genome.crg.cat/software/geneid/geneid.html
+  ## AB-INITIO METHODS:
+  
+  ### GeneID  prediction: (https://genome.crg.cat/software/geneid/geneid.html)
 
   > For the gene prediction, we used our fasta file ("Group2_contig_15842_16020.fa") and ran it in GeneID. From this we obtained the generation of our gff file ("GeneID.gff") in which we can see that we have a three gene structure with a score of 42.59 and a length of 10560 bps:
+  > 
   > 1st gene: 5 exons / 256 aa / score = 7.24.
+  > 
   > 2nd gene: 1 exon / 43 aa / score = 2.00
+  > 
   > 3rd gene: 5 exons / 428 aa / score = 33.34
   
-  - FGENESH: http://www.softberry.com/berry.phtml?topic=fgenesh&group=programs&subgroup=gfindYou
+  ### FGENESH: (http://www.softberry.com/berry.phtml?topic=fgenesh&group=programs&subgroup=gfindYou)
 
   >From our fasta file ("Group2_contig_15842_16020.fa") using FGENESH, we obtain that we have:
-  > 4 genes in +/-chain 2 from the C_elegans genomic DNA
-  > 16 exons in +chain 6 -chain 10
+  >
+  >Length of sequence 10375
+  >
+  > 4 genes in +/-chain 2 from the C_elegans genomic DNA.
+  > 
+  > 16 exons in +chain 6 -chain 10.
+  > 
+  > Gene 1: 3 exon (s)   1526  -   2189   486 bp, 161 aa, chain +
+  > 
+  > Gene 2: 4 exon (s)   2396  -   3529   987 bp, 328 aa, chain -
+  > 
+  > Gene 3: 6 exon (s)   3957  -   6437  2247 bp, 748 aa, chain -
+  > 
+  > Gene 4: 6 exon (s)   3957  -   6437  2247 bp, 155 aa, chain -
+  > 
   > The positions of predicted genes and exons have a score = 285.580908 
-  > Length of sequence: 10375 
- Number of predicted genes 4: in +chain 2, in -chain 2.
- Number of predicted exons 16: in +chain 6, in -chain 10.
- 
+  > 
 
-  - GENESCAN: http://argonaute.mit.edu/GENSCAN.html
+### GENESCAN: (http://argonaute.mit.edu/GENSCAN.html)
 
   > We use the "Group11_contig_194888_195063.fa" file to make a gene prediction using GeneID, this will result in the generation of a txt file called "GENESCAN.txt".
 
@@ -70,24 +86,4 @@ Functional annotation is an essential step in omics data analysis. It is defined
 
 
 #### Discuss the performance of the different methods. Can you guess to which species does your contig correspond?
-
-### PROJECT
-D. PROJECT DESCRIPTION
-The main objective of the project is to annotate the genes included in the contig and to functionally characterize the predicted proteins. For instance, you could use ab-initio tools to obtain a first prediction, identify the putative proteins using blast search and use homology-based tools with the annotations of a closely related species. Later you could functionally characterize your proteins. You should discuss the performance of the different methods. Can you guess to which species does your contig correspond?
-
-
-
-### Some suggestions:
- When using ab-initio models you have to select a species, the closest to the species of interest
-
- Blast searches between different species are more sensitive when performed at the protein level instead of using nucleotides, since changes at the aminacid level are accumulated to a lower rate than at the nucleotide level.
-
- You can decide to run the programs on the web server or locally (ab-initio tools can be also downloaded).
-
-
-###  Scientific report 
-using the structure described in session 1. Each person of each group will upload the report (as a pdf file) to the campus virtual. This report you should also include the commands and scripts used if any. Name the file as GROUPx_Surname_Name.pdf
-
-###  GitHub report: 
-upload to GitHub an .md file describing the pipeline used and the and/or scripts used if any. Each person of each group will upload the report (including the description of the pipeline, a brief discussion of the main results and the scripts -used if any- in a pdf file) to the campus virtual. Name the file as GROUPx_Surname_Name.pdf
 
