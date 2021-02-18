@@ -25,7 +25,7 @@ We will obtain gene predictions using the two types of methods and we will compa
   
   - GeneID  prediction: https://genome.crg.cat/software/geneid/geneid.html
 
-  > We use the "contig.fa" file to make a gene prediction using GeneID, this will result in the generation of a gff file called "GeneID.gff" containing in this case 4 predicted genes.
+  > We use the "Group2_contig_15842_16020.fa" file to make a gene prediction using GeneID, this will result in the generation of a gff file called "GeneID.gff" containing in this case 3 predicted genes.
   
   - FGENESH: http://www.softberry.com/berry.phtml?topic=fgenesh&group=programs&subgroup=gfindYou
 
@@ -63,37 +63,21 @@ Functional annotation is an essential step in omics data analysis. It is defined
 
 ### PROJECT
 D. PROJECT DESCRIPTION
-The main objective of the project is to annotate the
-genes included in the contig and to functionally characterize the predicted proteins.
-For instance, you could use ab-initio tools to obtain a first prediction, identify the putative
-proteins using blast search and use homology-based tools with the annotations of a
-closely related species. Later you could functionally characterize your proteins. You should
-discuss the performance of the different methods. Can you guess to which species does
-your contig correspond?
+The main objective of the project is to annotate the genes included in the contig and to functionally characterize the predicted proteins. For instance, you could use ab-initio tools to obtain a first prediction, identify the putative proteins using blast search and use homology-based tools with the annotations of a closely related species. Later you could functionally characterize your proteins. You should discuss the performance of the different methods. Can you guess to which species does your contig correspond?
+
+
 
 ### Some suggestions:
- When using ab-initio models you have to select a species, the closest to the species
-of interest
- Blast searches between different species are more sensitive when performed at the
-protein level instead of using nucleotides, since changes at the aminacid level are
-accumulated to a lower rate than at the nucleotide level.
- You can decide to run the programs on the web server or locally (ab-initio tools can
-be also downloaded).
+ When using ab-initio models you have to select a species, the closest to the species of interest
 
-The project will be evaluated according to the report provided and a short presentation
-(10’) that will take place during session 5 (18/02/21). Each group can choose which type of
-report they want to use:
+ Blast searches between different species are more sensitive when performed at the protein level instead of using nucleotides, since changes at the aminacid level are accumulated to a lower rate than at the nucleotide level.
+
+ You can decide to run the programs on the web server or locally (ab-initio tools can be also downloaded).
+
 
 ###  Scientific report 
-using the structure described in session 1. Each person of each
-group will upload the report (as a pdf file) to the campus virtual. This report you
-should also include the commands and scripts used if any. Name the file as
-GROUPx_Surname_Name.pdf
-7
+using the structure described in session 1. Each person of each group will upload the report (as a pdf file) to the campus virtual. This report you should also include the commands and scripts used if any. Name the file as GROUPx_Surname_Name.pdf
+
 ###  GitHub report: 
-upload to GitHub an .md file describing the pipeline used and the
-and/or scripts used if any. Each person of each group will upload the report
-(including the description of the pipeline, a brief discussion of the main
-results and the scripts -used if any- in a pdf file) to the campus virtual. Name the
-file as GROUPx_Surname_Name.pdf
+upload to GitHub an .md file describing the pipeline used and the and/or scripts used if any. Each person of each group will upload the report (including the description of the pipeline, a brief discussion of the main results and the scripts -used if any- in a pdf file) to the campus virtual. Name the file as GROUPx_Surname_Name.pdf
 
