@@ -25,11 +25,21 @@ We will obtain gene predictions using the two types of methods and we will compa
   
   - GeneID  prediction: https://genome.crg.cat/software/geneid/geneid.html
 
-  > We use the "Group2_contig_15842_16020.fa" file to make a gene prediction using GeneID, this will result in the generation of a gff file called "GeneID.gff" containing in this case 3 predicted genes.
+  > For the gene prediction, we used our fasta file ("Group2_contig_15842_16020.fa") and ran it in GeneID. From this we obtained the generation of our gff file ("GeneID.gff") in which we can see that we have a three gene structure with a score of 42.59 and a length of 10560 bps:
+  > 1st gene: 5 exons / 256 aa / score = 7.24.
+  > 2nd gene: 1 exon / 43 aa / score = 2.00
+  > 3rd gene: 5 exons / 428 aa / score = 33.34
   
   - FGENESH: http://www.softberry.com/berry.phtml?topic=fgenesh&group=programs&subgroup=gfindYou
 
-  > We use the "contig.fa" file to make a gene prediction using FGENESH, this will result in the generation of a txt file called "FGENESH.txt" containing the prediction.
+  >From our fasta file ("Group2_contig_15842_16020.fa") using FGENESH, we obtain that we have:
+  > 4 genes in +/-chain 2 from the C_elegans genomic DNA
+  > 16 exons in +chain 6 -chain 10
+  > The positions of predicted genes and exons have a score = 285.580908 
+  > Length of sequence: 10375 
+ Number of predicted genes 4: in +chain 2, in -chain 2.
+ Number of predicted exons 16: in +chain 6, in -chain 10.
+ 
 
   - GENESCAN: http://argonaute.mit.edu/GENSCAN.html
 
