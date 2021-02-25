@@ -3,14 +3,14 @@
 #### Nico Ares, Pol Besalú, Isaac Soul
 ------
 
-### PROJECT
+## PROJECT
 
 D. PROJECT DESCRIPTION
 The main objective of the project is to annotate the genes included in the contig and to functionally characterize the predicted proteins. For instance, you could use ab-initio tools to obtain a first prediction, identify the putative proteins using blast search and use homology-based tools with the annotations of a closely related species. Later you could functionally characterize your proteins. You should discuss the performance of the different methods. Can you guess to which species does your contig correspond?
 
 ------
 
-#### Download of our data:
+### Download of our data:
 
 Download assigned contig from a nematode species.
 
@@ -26,7 +26,7 @@ sudo apt install npm
 fetcher --url= "[https://github.com/kalicout/BioMol-Project-Group2.git/blob/main/Group2_contig_15842_16020.fa"
 ```
 
-#### First aproach to our data
+### First aproach to our data
 
 Since our data is a DNA sequence, it is unreadable at first sight so we don't know even what organism does it belong to. To get a first insight at it we can use blast, specifficly blastx(From DNA to AA). Entering the link https://blast.ncbi.nlm.nih.gov/Blast.cgi we click on blastx and select our fasta(.fa) contig.
 
@@ -36,10 +36,11 @@ The blastx beat maches where
 
 knowing this we can start using AB-initio tools specifficly for this two species(they are both small wormlike nematodes).
 
-#### AB-Initio methods:
-
+### AB-Initio methods:
   
-  ### GeneID  prediction: (https://genome.crg.cat/software/geneid/geneid.html)
+We will use ab initio methods to make predictions about where the exons are in our contig and which proteins are encoded. For this we used three methods GeneID prediction, Softberry and Genescan.
+  
+  #### GeneID  prediction: (https://genome.crg.cat/software/geneid/geneid.html)
 
   > For the gene prediction, we used our fasta file ("Group2_contig_15842_16020.fa") and ran it in GeneID. From this we obtained the generation of our gff file ("GeneID.gff") in which we can see that we have a three gene structure with a score of 42.59 and a length of 10560 bps:
   > 
@@ -49,7 +50,7 @@ knowing this we can start using AB-initio tools specifficly for this two species
   > 
   > 3rd gene: 5 exons / 428 aa / score = 33.34
   
-  ### FGENESH: (http://www.softberry.com/berry.phtml?topic=fgenesh&group=programs&subgroup=gfindYou)
+  #### FGENESH: (http://www.softberry.com/berry.phtml?topic=fgenesh&group=programs&subgroup=gfindYou)
 
   >From our fasta file ("Group2_contig_15842_16020.fa") using FGENESH, we obtain that we have:
   >
@@ -70,7 +71,7 @@ knowing this we can start using AB-initio tools specifficly for this two species
   > The positions of predicted genes and exons have a score = 285.580908 
   > 
 
-### GENESCAN: (http://argonaute.mit.edu/GENSCAN.html)
+#### GENESCAN: (http://argonaute.mit.edu/GENSCAN.html)
 
   > We run our fasta file ("Group2_contig_15842_16020.fa") through GENESCAN and obtained the following results:
   > 
