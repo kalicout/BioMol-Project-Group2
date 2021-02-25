@@ -9,11 +9,15 @@ Download assigned contig from a nematode species.
 # so we can download particular files from the github repo.
 npm install -g github-files-fetcher
 
+# If we don't have npm package manager and retry:
+sudo apt install npm
+
 # Download contig sequence from repo
 fetcher --url= "[https://github.com/kalicout/BioMol-Project-Group2.git/blob/main/Group2_contig_15842_16020.fa"
 ```
 
 ### PROJECT
+
 D. PROJECT DESCRIPTION
 The main objective of the project is to annotate the genes included in the contig and to functionally characterize the predicted proteins. For instance, you could use ab-initio tools to obtain a first prediction, identify the putative proteins using blast search and use homology-based tools with the annotations of a closely related species. Later you could functionally characterize your proteins. You should discuss the performance of the different methods. Can you guess to which species does your contig correspond?
 
