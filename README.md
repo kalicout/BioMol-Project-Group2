@@ -49,15 +49,16 @@ We will use ab initio methods to make predictions about where the exons are in o
   
   #### GeneID  prediction: (https://genome.crg.cat/software/geneid/geneid.html)
    We use our contig and select as an option C.elegans:
-   The results are in: 
+   * The results are in: https://github.com/kalicout/BioMol-Project-Group2/blob/main/GeneID.gff
   
   #### FGENESH: (http://www.softberry.com/berry.phtml?topic=fgenesh&group=programs&subgroup=gfindYou)
    We use our contig and select as an option both C.elegans and C.brenneri:
-   The results are in:
+   * The results for C.elegans are in: https://github.com/kalicout/BioMol-Project-Group2/blob/main/FGENESH.txt
+   * The results for C.brenneri are in: https://github.com/kalicout/BioMol-Project-Group2/blob/main/FGENESH.txt
 
   #### GENESCAN: (http://argonaute.mit.edu/GENSCAN.html)
    We use our contig and select vertebrae(there isn't an alternate option) as the organism:
-   The results are in
+   * The results are in: https://github.com/kalicout/BioMol-Project-Group2/blob/main/GENESCAN.txt
 
 ## HOMOLOGY BASED METHODS:
 
