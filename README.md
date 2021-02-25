@@ -40,7 +40,7 @@ knowing this we can start using AB-initio tools specifficly for this two species
 
 ------
 
-![CAENORHABDITIS.B](https://github.com/kalicout/BioMol-Project-Group2/blob/main/CB.jpeg)
+![CAENORHABDITIS.B](https://github.com/kalicout/BioMol-Project-Group2/blob/main/CB.jpg)
 
 
 ### AB-Initio methods:
