@@ -2,6 +2,16 @@
 
 #### Nico Ares, Pol Besalú, Isaac Soul
 ------
+
+### PROJECT
+
+D. PROJECT DESCRIPTION
+The main objective of the project is to annotate the genes included in the contig and to functionally characterize the predicted proteins. For instance, you could use ab-initio tools to obtain a first prediction, identify the putative proteins using blast search and use homology-based tools with the annotations of a closely related species. Later you could functionally characterize your proteins. You should discuss the performance of the different methods. Can you guess to which species does your contig correspond?
+
+------
+
+#### Download of our data:
+
 Download assigned contig from a nematode species.
 
 ```bash
@@ -16,18 +26,15 @@ sudo apt install npm
 fetcher --url= "[https://github.com/kalicout/BioMol-Project-Group2.git/blob/main/Group2_contig_15842_16020.fa"
 ```
 
-### PROJECT
-
-D. PROJECT DESCRIPTION
-The main objective of the project is to annotate the genes included in the contig and to functionally characterize the predicted proteins. For instance, you could use ab-initio tools to obtain a first prediction, identify the putative proteins using blast search and use homology-based tools with the annotations of a closely related species. Later you could functionally characterize your proteins. You should discuss the performance of the different methods. Can you guess to which species does your contig correspond?
-
-
-### GitHub report: 
-upload to GitHub an .md file describing the pipeline used and the and/or scripts used if any. Each person of each group will upload the report (including the description of the pipeline, a brief discussion of the main results and the scripts -used if any- in a pdf file) to the campus virtual. Name the file as GROUPx_Surname_Name.pdf
-
 #### First aproach to our data
 
 Since our data is a DNA sequence, it is unreadable at first sight so we don't know even what organism does it belong to. To get a first insight at it we can use blast, specifficly blastx(From DNA to AA). Entering the link https://blast.ncbi.nlm.nih.gov/Blast.cgi we click on blastx and select our fasta(.fa) contig.
+
+The blastx beat maches where 
+* hypothetical protein CAEBREN_31550 [Caenorhabditis brenneri]
+* Uncharacterized protein CELE_R13H4.7 [Caenorhabditis elegans]
+
+knowing this we can start using AB-initio tools specifficly for this two species(they are both small wormlike nematodes).
 
 #### AB-Initio methods:
 
