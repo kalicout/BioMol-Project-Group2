@@ -48,15 +48,15 @@ knowing this we can start using AB-initio tools specifficly for this two species
 We will use ab initio methods to make predictions about where the exons are in our contig and which proteins are encoded. For this we used three methods GeneID prediction, Softberry and Genescan. For the gene prediction, we used our fasta file ("Group2_contig_15842_16020.fa") and ran it in the said predictors, this were the results.
   
   #### GeneID  prediction: (https://genome.crg.cat/software/geneid/geneid.html)
- 
-   The results are in:
+   We use our contig and select as an option C.elegans:
+   The results are in: 
   
   #### FGENESH: (http://www.softberry.com/berry.phtml?topic=fgenesh&group=programs&subgroup=gfindYou)
- 
+   We use our contig and select as an option both C.elegans and C.brenneri:
    The results are in:
 
   #### GENESCAN: (http://argonaute.mit.edu/GENSCAN.html)
-
+   We use our contig and select vertebrae(there isn't an alternate option) as the organism:
    The results are in
 
 ## HOMOLOGY BASED METHODS:
