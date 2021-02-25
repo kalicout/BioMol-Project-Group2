@@ -36,8 +36,8 @@ The blastx beat maches where
 
 knowing this we can start using AB-initio tools specifficly for this two species(they are both small wormlike nematodes).
 
-![CAENORHABDITIS.E](/images/Caenorhabditis_E.png)
-Format: ![Alt Text](url)
+![CAENORHABDITIS.E](https://github.com/kalicout/BioMol-Project-Group2.git/blob/main/Caenorhabditis_E.png)
+
 
 
 ### AB-Initio methods:
