@@ -23,7 +23,7 @@ npm install -g github-files-fetcher
 sudo apt install npm
 
 # Download contig sequence from repo
-fetcher --url= "[https://github.com/kalicout/BioMol-Project-Group2.git/blob/main/Group2_contig_15842_16020.fa"
+fetcher --url= "https://github.com/kalicout/BioMol-Project-Group2/blob/main/Group2_contig_15842_16020.fa"
 ```
 
 ### First aproach to our data
@@ -36,8 +36,8 @@ The blastx beat maches where
 
 knowing this we can start using AB-initio tools specifficly for this two species(they are both small wormlike nematodes).
 
-![CAENORHABDITIS.E](https://github.com/kalicout/BioMol-Project-Group2.git/blob/main/CE.jpg)
-
+![CAENORHABDITIS.E](https://github.com/kalicout/BioMol-Project-Group2/blob/main/CE.jpg)
+![CAENORHABDITIS.B](https://github.com/kalicout/BioMol-Project-Group2/blob/main/Caenorhabditis_brenneri.jpeg)
 
 
 ### AB-Initio methods:
