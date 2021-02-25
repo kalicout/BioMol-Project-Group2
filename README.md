@@ -36,11 +36,12 @@ The blastx beat maches where
 
 knowing this we can start using AB-initio tools specifficly for this two species(they are both small wormlike nematodes).
 
-![CAENORHABDITIS.E](https://github.com/kalicout/BioMol-Project-Group2/blob/main/CE.jpg)
+
+![CAENORHABDITIS.B](https://github.com/kalicout/BioMol-Project-Group2/blob/main/CB.jpg)C.BRENNERI
 
 ------
 
-![CAENORHABDITIS.B](https://github.com/kalicout/BioMol-Project-Group2/blob/main/CB.jpg)
+![CAENORHABDITIS.E](https://github.com/kalicout/BioMol-Project-Group2/blob/main/CE.jpg)C.ELEGANS
 
 
 ### AB-Initio methods:
