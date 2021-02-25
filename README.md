@@ -12,7 +12,7 @@ The main objective of the project is to annotate the genes included in the conti
 
 ### Download of our data:
 
-Download assigned contig from a nematode species.
+Download assigned contig from an unknown species.
 
 ```bash
 # Using npm package manager we're going to install github-files-fetcher
