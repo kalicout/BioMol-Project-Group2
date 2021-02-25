@@ -45,49 +45,19 @@ knowing this we can start using AB-initio tools specifficly for this two species
 
 ### AB-Initio methods:
   
-We will use ab initio methods to make predictions about where the exons are in our contig and which proteins are encoded. For this we used three methods GeneID prediction, Softberry and Genescan.
+We will use ab initio methods to make predictions about where the exons are in our contig and which proteins are encoded. For this we used three methods GeneID prediction, Softberry and Genescan. For the gene prediction, we used our fasta file ("Group2_contig_15842_16020.fa") and ran it in the said predictors, this were the results.
   
   #### GeneID  prediction: (https://genome.crg.cat/software/geneid/geneid.html)
-
-  > For the gene prediction, we used our fasta file ("Group2_contig_15842_16020.fa") and ran it in GeneID. From this we obtained the generation of our gff file ("GeneID.gff") in which we can see that we have a three gene structure with a score of 42.59 and a length of 10560 bps:
-  > 
-  > 1st gene: 5 exons / 256 aa / score = 7.24.
-  > 
-  > 2nd gene: 1 exon / 43 aa / score = 2.00
-  > 
-  > 3rd gene: 5 exons / 428 aa / score = 33.34
+ 
+   The results are in:
   
   #### FGENESH: (http://www.softberry.com/berry.phtml?topic=fgenesh&group=programs&subgroup=gfindYou)
+ 
+   The results are in:
 
-  >From our fasta file ("Group2_contig_15842_16020.fa") using FGENESH, we obtain that we have:
-  >
-  >Length of sequence 10375
-  >
-  > 4 genes in +/-chain 2 from the C_elegans genomic DNA.
-  > 
-  > 16 exons in +chain 6 / -chain 10.
-  > 
-  > Gene 1: 3 exon (s),   1526  -   2189,   486 bp, 161 aa, chain +
-  > 
-  > Gene 2: 4 exon (s),   2396  -   3529,   987 bp, 328 aa, chain -
-  > 
-  > Gene 3: 6 exon (s),   3957  -   6437,  2247 bp, 748 aa, chain -
-  > 
-  > Gene 4: 6 exon (s),   3957  -   6437,  2247 bp, 155 aa, chain -
-  > 
-  > The positions of predicted genes and exons have a score = 285.580908 
-  > 
+  #### GENESCAN: (http://argonaute.mit.edu/GENSCAN.html)
 
-#### GENESCAN: (http://argonaute.mit.edu/GENSCAN.html)
-
-  > We run our fasta file ("Group2_contig_15842_16020.fa") through GENESCAN and obtained the following results:
-  > 
-  > 10566 bp : 36.78% C+G : Isochore 1 ( 0 - 43 C+G%)
-  > 
-  > NO EXONS FOUND AT GIVEN PROBABILITY CUTOFF
-  > 
-  > Our GENSCAN predicted 1 peptide of 251 aa. 
-
+   The results are in
 
 ## HOMOLOGY BASED METHODS:
 
