@@ -36,6 +36,10 @@ The blastx beat maches where
 
 knowing this we can start using AB-initio tools specifficly for this two species(they are both small wormlike nematodes).
 
+![CAENORHABDITIS.E](/images/Caenorhabditis_E.png)
+Format: ![Alt Text](url)
+
+
 ### AB-Initio methods:
   
 We will use ab initio methods to make predictions about where the exons are in our contig and which proteins are encoded. For this we used three methods GeneID prediction, Softberry and Genescan.
