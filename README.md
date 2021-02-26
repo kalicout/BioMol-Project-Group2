@@ -139,11 +139,16 @@ sed     -e    '2,$s/>.*//'    Celegans.fa     |grep     -v    '^$'     > Celegan
 
 Functional annotation is an essential step in omics data analysis. It is defined as the process of attaching biological information to gene and protein sequences (such as those predicted using Ab-initio and Homology-based methods) and describing functional groups based on similarities, basically it is trying to describe what kind of protein it is and what its function is.
 
-For this we used interproscan (https://www.ebi.ac.uk/interpro/search/sequence/) and we runned the protein stored in seqdump.fa this tool will tell what kind of protein do we have, its binding sites, active sites etc...4
+For this we used interproscan (https://www.ebi.ac.uk/interpro/search/sequence/) and we runned the protein stored in seqdump.fa this tool will tell what kind of protein do we have, its binding sites, active sites etc...
 
-
-
+We will get as a result a .tsv file that we can download ours is in https://github.com/kalicout/BioMol-Project-Group2/blob/main/iprscan5-R20210226-160236-0642-74223031-p2m.tsv.
 
 
 ### Discussion of the methods and results:
+
+We got to know some things about our contig, first of all the organism whom it belongs to , Caenorhabditis brenneri or Caenorhabditis elegans(We can't konw exactly since we jumped from one to another when using the tools) we also know the exons of the gene that contains this protein ( they are in our SBCBRENERI.txt file) and altough we don't know much about the protein itself and its function we know its lenght is 350 aa . We have to take into account that this isn't an actual real proven protein but a hypotetical one.
+
+The methods that we used were pretty easy to use on their servers via their webpages, but when it came to the terminal their commands where hard to understand and remake for our especific porpouses that is why we discarded the idea of running them in our computers. Another thing to say is that some of them are really unespecific or too especific, for example Genescan only allowed us to make a prediction for 3 options and none of them included our nematode making this tool unusable in many situations. Blast was the best method used, simple , easy and pretty extensive which made it perfect for many things. In conclusion this methods turned out to be practical and give most of the information we wanted. 
+
+
 
