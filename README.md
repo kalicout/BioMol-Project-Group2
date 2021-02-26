@@ -73,21 +73,52 @@ We will use ab initio methods to make predictions about where the exons are in o
    We use our contig and select vertebrae(there isn't an alternate option) as the organism:
    * The results are in: https://github.com/kalicout/BioMol-Project-Group2/blob/main/GENESCAN.txt
    > NO EXONS FOUND AT GIVEN PROBABILITY CUTOF
-
-## HOMOLOGY BASED METHODS:
-
-  > We run our sequence through blast against the nr database
-
-  - Run *blastx* of the unspliced sequence against the *nr database*. Since this is a huge database, this time we will run blast on the ncbi server https://blast.ncbi.nlm.nih.gov/Blast.cgi
-
-  - blast search to identify the putative proteins (more sensitive if protein level instead of nucleotides)
-  - https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome
   
-  > Then we transform the translated nucleotide sequence "Group11_contig_194888_195063.fa" to protein with blastx, in this step we generate a "tioblast.fa" containing the putative proteins.
+  #### Results:
+  
+  If we take a closer look to the data, we can see that the prediction for C.Elegans in geneID gives the same exons than the Softberry scan for C.Brenneri.
+  GENEID
+  > Contig	geneid_v1.2	Internal	7810	7999	 6.60	+	0	Contig_3
+  > 
+  > Contig	geneid_v1.2	Internal	8056	8293	 4.54	+	2	Contig_3
+  > 
+  > Contig	geneid_v1.2	Internal	8396	8495	-0.44	+	1	Contig_3
+  > 
+  > Contig	geneid_v1.2	Terminal	10008	10343	 9.71	+	0	Contig_3
+  > 
+------
+  SOFTBERRY
+  > 2 +    2 CDSi      7810 -      7999    6.59      7810 -      7998    189
+  > 
+  > 2 +    3 CDSi      8056 -      8293   15.23      8058 -      8291    234
+  > 
+  > 2 +    4 CDSi      8396 -      8495    3.45      8397 -      8495     99
+  > 
+  > 2 +    5 CDSi     10008 -     10312   20.37     10008 -     10310    303
+  > 
+  
+  Softberry has predicted a protein for this exons, and since two predictors have the same result, it is our more reliable data to continue exploring.So we create        
+  a file and copy paste the protein.
+  ```bash
+  # change directory to path
+  cd <path>
+  # Create the file in fasta format
+  nano Celegansprotein.fa
+  # We just have to copy the DNAseq for the exon from the SBCBRENNERI.txt file and paste in the terminal, then we use ctrl+X to save the file.
+  ```
+  We should get a file like https://github.com/kalicout/BioMol-Project-Group2/blob/main/Celegansprotein.fa
 
-- **sequences comparison** Compare them with the annotated protein in Ensembl database
+### Homology Based Methods:
 
-  - To obtain the multiple alignment we will use the simple MSA option from T-coffee software (http://tcoffee.crg.cat/). Which software do you think is more accurate?
+ Now we will use homology based methods using the Celegansprotein.fa to see if we obtein a good match we can run exonerate with.
+
+We start by running *blastx* which converts from nucleotides to protein of the unspliced sequence against the *nr database*. Since this is a huge database, this time we will run blast on the ncbi server https://blast.ncbi.nlm.nih.gov/Blast.cgi
+
+As a result we get a lot of matches, we can try to make an alignment with all of them but we will chose the most acurate one (The first in the list), we can download it from the web page directly in fasta format as seqdump.fa.
+
+Now we can run exonerate to make an alignment.
+### Exonerate pipeline:
+
 
 #### Functionally characterization of the predicted proteins
 
