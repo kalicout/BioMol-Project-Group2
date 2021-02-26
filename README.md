@@ -28,13 +28,13 @@ fetcher --url= "https://github.com/kalicout/BioMol-Project-Group2/blob/main/Grou
 
 ### First aproach to our data
 
-Since our data is a DNA sequence, it is unreadable at first sight so we don't know even what organism does it belong to. To get a first insight at it we can use blast, specifficly blastx(From DNA to AA). Entering the link https://blast.ncbi.nlm.nih.gov/Blast.cgi we click on blastx and select our fasta(.fa) contig.
+Since our data is a DNA sequence, it is unreadable at first sight, so we don't even know what organism it belongs to. To get a first insight at it, we can use blast, specificly blastx(From DNA to AA). Entering the link https://blast.ncbi.nlm.nih.gov/Blast.cgi we click on blastx and select our fasta(.fa) contig.
 
 The blastx beat maches where 
 * hypothetical protein CAEBREN_31550 [Caenorhabditis brenneri]
 * Uncharacterized protein CELE_R13H4.7 [Caenorhabditis elegans]
 
-knowing this we can start using AB-initio tools specifficly for this two species(they are both small wormlike nematodes).
+knowing this we can start using AB-initio tools specificly for these two species(they are both small wormlike nematodes).
 
 
 ![CAENORHABDITIS.B](https://github.com/kalicout/BioMol-Project-Group2/blob/main/CB.jpg)C.BRENNERI
@@ -97,8 +97,9 @@ We will use ab initio methods to make predictions about where the exons are in o
   > 2 +    5 CDSi     10008 -     10312   20.37     10008 -     10310    303
   > 
   
-  Softberry has predicted a protein for this exons, and since two predictors have the same result, it is our more reliable data to continue exploring.So we create        
-  a file and copy paste the protein.
+  Softberry has predicted a protein for these exons, and since two predictors have the same result, it is our more reliable data to continue exploring. 
+  So we create a file and copy paste the protein.
+  
   ```bash
   # change directory to path
   cd <path>
@@ -114,7 +115,7 @@ Now we will use homology based methods using the Celegansprotein.fa to see if we
 
 We start by running *blastx* which converts from nucleotides to protein of the unspliced sequence against the *nr database*. Since this is a huge database, this time we will run blast on the ncbi server https://blast.ncbi.nlm.nih.gov/Blast.cgi
 
-As a result we get a lot of matches, we can try to make an alignment with all of them but we will chose the most acurate one (The first in the list), we can download it from the web page directly in fasta format as seqdump.fa.
+As a result we get a lot of matches, we can try to make an alignment with all of them but we will choose the most acurate one (The first in the list), we can download it from the web page directly in fasta format as seqdump.fa.
 
 Now we can run exonerate to make an alignment.
 
@@ -146,9 +147,9 @@ We will get as a result a .tsv file that we can download ours is in https://gith
 
 ### Discussion of the methods and results:
 
-We got to know some things about our contig, first of all the organism whom it belongs to , Caenorhabditis brenneri or Caenorhabditis elegans(We can't konw exactly since we jumped from one to another when using the tools) we also know the exons of the gene that contains this protein ( they are in our SBCBRENERI.txt file) and altough we don't know much about the protein itself and its function we know its lenght is 350 aa . We have to take into account that this isn't an actual real proven protein but a hypotetical one.
+We got to know some things about our contig. First of all, the organism whom it belongs to , Caenorhabditis brenneri or Caenorhabditis elegans (we can't konw exactly since we jumped from one to another when using the tools), we also know the exons of the gene that contains this protein ( they are in our SBCBRENERI.txt file) and altough we don't know much about the protein itself and its function we know its lenght is 350 aa. We have to take into account that this isn't an actual real proven protein but a hypothetical one.
 
-The methods that we used were pretty easy to use on their servers via their webpages, but when it came to the terminal their commands where hard to understand and remake for our especific porpouses that is why we discarded the idea of running them in our computers. Another thing to say is that some of them are really unespecific or too especific, for example Genescan only allowed us to make a prediction for 3 options and none of them included our nematode making this tool unusable in many situations. Blast was the best method used, simple , easy and pretty extensive which made it perfect for many things. In conclusion this methods turned out to be practical and give most of the information we wanted. 
+The methods that we used were pretty easy to use on their servers via their webpages, but when it came to the terminal, their commands where hard to understand and remake for our especific porpouses that is why we discarded the idea of running them in our computers. Another thing to say is that some of them are really unspecific or too especific, for example Genescan only allowed us to make a prediction for 3 options and none of them included our nematode making this tool unusable in many situations. Blast was the best method used, simple , easy and pretty extensive which made it perfect for many things. In conclusion this methods turned out to be practical and give most of the information we wanted for our research. 
 
 
 
