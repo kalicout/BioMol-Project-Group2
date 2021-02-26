@@ -51,15 +51,28 @@ We will use ab initio methods to make predictions about where the exons are in o
   #### GeneID  prediction: (https://genome.crg.cat/software/geneid/geneid.html)
    We use our contig and select as an option C.elegans:
    * The results are in: https://github.com/kalicout/BioMol-Project-Group2/blob/main/GeneID.gff
-  
+   > 3 genes. Score = 42.59 
+   > 
+   > Gene 1 (Reverse). 5 exons. 256 aa. Score = 7.24 
+   > 
+   > Gene 2 (Reverse). 1 exons. 43 aa. Score = 2.00 
+   > 
+   > Gene 3 (Forward). 5 exons. 428 aa. Score = 33.34 
   #### FGENESH: (http://www.softberry.com/berry.phtml?topic=fgenesh&group=programs&subgroup=gfindYou)
    We use our contig and select as an option both C.elegans and C.brenneri:
-   * The results for C.elegans are in: https://github.com/kalicout/BioMol-Project-Group2/blob/main/FGENESH.txt
-   * The results for C.brenneri are in: https://github.com/kalicout/BioMol-Project-Group2/blob/main/FGENESH.txt
+   * The results for C.elegans are in: https://github.com/kalicout/BioMol-Project-Group2/blob/main/SBCELEGANS.txt
+   > Number of predicted genes 4: in +chain 2, in -chain 2.
+   > 
+   > Number of predicted exons 16: in +chain 6, in -chain 10.
+   * The results for C.brenneri are in: https://github.com/kalicout/BioMol-Project-Group2/blob/main/SBCBRENNERI.txt
+   > Number of predicted genes 2: in +chain 1, in -chain 1.
+   > 
+   > Number of predicted exons 8: in +chain 6, in -chain 2.
 
   #### GENESCAN: (http://argonaute.mit.edu/GENSCAN.html)
    We use our contig and select vertebrae(there isn't an alternate option) as the organism:
    * The results are in: https://github.com/kalicout/BioMol-Project-Group2/blob/main/GENESCAN.txt
+   > NO EXONS FOUND AT GIVEN PROBABILITY CUTOF
 
 ## HOMOLOGY BASED METHODS:
 
